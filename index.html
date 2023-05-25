@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    type="text/javascript"
+    src="/table_reservation_widget.bundle.js"
+></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <div style="background-color: white;">
+            <div id="widgetContainer" />
+            <button id="table-reservation">Replace me!</button>
+        </div>
+    </div>
+    
+    <script>
+            document.getElementById('table-reservation').addEventListener('click', () => {
+                const config = {};
+                config.widgetContainerId = 'widgetContainer';
+                config.open = true;
+                config.channelId = '57e4223d-8b29-4a40-ac87-257922f01573';
+                config.alternativeStyleChannelId = '702b4782-6d89-4448-98b7-55dcea508f6e';
+                config.languageCulture = 'en-GB';
+                BV.TableReservationWidget({ ...config });
+            });
+    </script>
+
+</body>
+</html>
